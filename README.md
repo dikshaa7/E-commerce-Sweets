@@ -640,9 +640,7 @@ npm start
 
 ---
 
-## License
-
-MIT License — free to use for learning and development.
+## Diksha Final Year BCA project
 
 ---
 
