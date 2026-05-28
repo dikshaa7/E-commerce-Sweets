@@ -1,0 +1,29 @@
+import { FiAlertTriangle } from 'react-icons/fi';
+
+const AdminConfirmModal = ({ open, title, message, confirmLabel = 'Confirm', onConfirm, onCancel, danger = false, loading = false }) => {
+  if (!open) return null;
+  return (
+    <div className="fixed inset-0 z-[110] flex items-center justify-center p-4">
+      <div className="absolute inset-0 bg-black/60" onClick={onCancel} />
+      <div className="relative bg-white rounded-2xl shadow-xl max-w-md w-full p-6">
+        <div className={`w-12 h-12 rounded-full flex items-center justify-center mb-4 ${danger ? 'bg-red-100 text-red-600' : 'bg-primary-100 text-primary-600'}`}>
+          <FiAlertTriangle size={22} />
+        </div>
+        <h3 className="text-lg font-semibold text-gray-900 mb-2">{title}</h3>
+        <p className="text-gray-600 text-sm mb-6">{message}</p>
+        <div className="flex gap-3 justify-end">
+          <button onClick={onCancel} className="btn-secondary text-sm py-2" disabled={loading}>Cancel</button>
+          <button
+            onClick={onConfirm}
+            disabled={loading}
+            className={`text-sm py-2 px-5 rounded-lg font-medium text-white transition disabled:opacity-50 ${danger ? 'bg-red-600 hover:bg-red-700' : 'bg-primary-600 hover:bg-primary-700'}`}
+          >
+            {loading ? 'Processing...' : confirmLabel}
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default AdminConfirmModal;

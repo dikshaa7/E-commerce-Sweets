@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans text-gray-800 bg-gray-50 antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 text-white font-medium px-6 py-2.5 rounded-lg transition-all duration-200 shadow-sm hover:shadow-md;
+  }
+  .btn-secondary {
+    @apply bg-white hover:bg-gray-50 text-primary-700 font-medium px-6 py-2.5 rounded-lg border border-primary-200 transition-all duration-200;
+  }
+  .btn-outline {
+    @apply border-2 border-white text-white hover:bg-white hover:text-primary-700 font-medium px-6 py-2.5 rounded-lg transition-all duration-200;
+  }
+  .input-field {
+    @apply w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all;
+  }
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden;
+  }
+  .section-title {
+    @apply text-3xl font-display font-bold text-gray-900 mb-2;
+  }
+  .panel-label {
+    @apply text-xs font-semibold uppercase tracking-wide text-gray-500;
+  }
+  .panel-stat {
+    @apply card p-5 hover:shadow-md transition-shadow;
+  }
+  .section-subtitle {
+    @apply text-gray-600 mb-8;
+  }
+  .admin-stat-card {
+    @apply bg-white rounded-xl border border-gray-100 shadow-sm p-5 hover:shadow-md transition-shadow;
+  }
+  .admin-table-wrap {
+    @apply bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden overflow-x-auto;
+  }
+  .admin-table {
+    @apply w-full text-sm;
+  }
+  .admin-table thead {
+    @apply bg-slate-50 border-b border-gray-200;
+  }
+  .admin-table th {
+    @apply text-left px-4 py-3.5 text-xs font-semibold uppercase tracking-wide text-gray-500;
+  }
+  .admin-table td {
+    @apply px-4 py-3.5 border-b border-gray-50 align-middle;
+  }
+  .admin-table tbody tr {
+    @apply hover:bg-gray-50/80 transition-colors;
+  }
+  .admin-form-label {
+    @apply block text-sm font-medium text-gray-700 mb-1.5;
+  }
+  .admin-btn-icon {
+    @apply p-2 rounded-lg transition-colors;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4824a;
+  border-radius: 3px;
+}
