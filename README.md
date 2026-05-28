@@ -433,15 +433,15 @@ http://localhost:5000/api
 | Field | Value |
 |-------|-------|
 | **URL** | http://localhost:3000/admin/login |
-| **Email** | `admin@sweets.com` |
-| **Password** | `admin123` |
+| **Email** | `Diksha@gmail.com` |
+| **Password** | `Diksha123` |
 
 ### Customer Accounts (Seed Data)
 | Name | Email | Password |
 |------|-------|----------|
-| Rahul Sharma | `rahul@email.com` | `user123` |
-| Priya Patel | `priya@email.com` | `user123` |
-| Amit Kumar | `amit@email.com` | `user123` |
+| Nazrul | `Nazrul@gmail.com` | `user123` |
+| Rohit | `Rohit@gmail.com` | `user123` |
+| Mohit | `Mohit@gmail.com` | `user123` |
 
 > **Note:** Run `npm run seed` in the backend folder to create these accounts and sample data.
 
@@ -453,8 +453,8 @@ Running the seed script populates the database with:
 
 | Data Type | Count | Details |
 |-----------|-------|---------|
-| Admin | 1 | admin@sweets.com |
-| Users | 3 | rahul, priya, amit |
+| Admin | 1 | Diksha@gmail.com |
+| Users | 3 | Nazrul, Rohit, Mohit |
 | Brands | 4 | Haldiram, Bikano, Ghasitaram, Sweet Bengal |
 | Categories | 5 | Mithai, Cakes, Chocolates, Dry Fruit Sweets, Festival Sweets |
 | Products | 8 | Kaju Katli, Rasgulla, Chocolate Cake, etc. |
@@ -525,8 +525,8 @@ npm run seed
 Expected output:
 ```
 ========== SEED COMPLETED ==========
-Admin Login: admin@sweets.com / admin123
-User Login: rahul@email.com / user123
+Admin Login: Diksha@gmail.com / Diksha123
+User Login: Nazrul@gmail.com / user123
 ====================================
 ```
 
@@ -635,7 +635,7 @@ npm start
 | Port 5000 in use | Change `PORT` in `.env` or stop the conflicting process |
 | Port 3000 in use | Vite will suggest an alternate port automatically |
 | Empty product list | Run `npm run seed` in the backend folder |
-| Admin login fails | Use `admin@sweets.com` / `admin123` after seeding |
+| Admin login fails | Use `Diksha@gmail.com` / `Diksha123` after seeding |
 | Images not loading | Backend must be running; uploads served from `/uploads` |
 
 ---
