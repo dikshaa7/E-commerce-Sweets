@@ -39,7 +39,7 @@ const seedData = async () => {
     console.log('Creating brands...');
     const brands = await Brand.insertMany([
       { name: 'Haldiram', logo: '/brand_haldiram.png', isActive: true },
-      { name: 'Bikano', logo: '/brand_bikano.png', isActive: true }, s,
+      { name: 'Bikano', logo: '/brand_bikano.png', isActive: true },
       { name: 'Ghasitaram', logo: '/brand_ghasitaram.png', isActive: true },
       { name: 'Sweet Bengal', logo: '/brand_sweetbengal.png', isActive: true },
     ]);
