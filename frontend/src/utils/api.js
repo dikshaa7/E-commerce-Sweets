@@ -36,7 +36,7 @@ export const getImageUrl = (path) => {
   }
 
   const safePath = typeof path === 'string' ? path : String(path);
-  return `${backendUrl}${safePath.startsWith('/') ? safePath : `/${safePath}`}`;
+  return safePath.startsWith('/') ? safePath : `/${safePath}`;
 };
 
 export const formatPrice = (price) =>
