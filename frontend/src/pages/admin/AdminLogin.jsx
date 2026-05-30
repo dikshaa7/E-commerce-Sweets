@@ -46,7 +46,7 @@ const AdminLogin = () => {
               <label className="admin-form-label">Email Address</label>
               <div className="relative">
                 <FiMail className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
-                <input type="email" required placeholder="Diksha@gmail.com" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} className="input-field pl-10" />
+                <input type="email" required placeholder="admin@example.com" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} className="input-field pl-10" />
               </div>
             </div>
             <div>
@@ -61,9 +61,7 @@ const AdminLogin = () => {
             </button>
           </form>
 
-          <p className="text-center text-xs text-gray-400 mt-6 bg-gray-50 p-3 rounded-lg">
-            Demo: <strong>Diksha@gmail.com</strong> / <strong>Diksha123</strong>
-          </p>
+
         </div>
       </div>
     </div>
