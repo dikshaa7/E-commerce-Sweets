@@ -20,8 +20,6 @@ A full-stack e-commerce platform for selling premium Indian sweets. It includes 
 - [Installation & How to Run](#installation--how-to-run)
 - [Environment Variables](#environment-variables)
 - [Application URLs](#application-urls)
-- [License](#license)
-
 ---
 
 ## Project Overview
@@ -569,6 +567,12 @@ Frontend runs at: **http://localhost:3000**
 | `MONGO_URI` | MongoDB connection string | `mongodb://127.0.0.1:27017/sweets_ecommerce` |
 | `JWT_SECRET` | Secret key for JWT signing | `your_secret_key` |
 | `JWT_EXPIRE` | Token expiry duration | `7d` |
+
+### Frontend (`frontend/.env`)
+
+| Variable | Description | Example |
+|----------|-------------|---------|
+| `VITE_BACKEND_URL` | Deployed backend API URL (required for production) | `https://your-backend.onrender.com` |
 
 ---
 
